@@ -1,37 +1,44 @@
-/* Estilos para o banner do topo */
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .banner-topo {
-    background-color: #ccc; /* Cor cinza claro */
-    padding: 20px;
+    background-color: #f2f2f2;
     text-align: center;
-    height: 100px; /* Altura do banner */
+    padding: 10px 0;
+    margin-bottom: 20px;
 }
 
-/* Estilos para o banner lateral */
 .banner-lateral {
-    background-color: #ccc; /* Cor cinza claro */
-    padding: 20px;
-    height: 300px; /* Altura do banner */
-    float: right; /* Para alinhar à direita */
-    margin-left: 20px; /* Margem à esquerda para separação do provérbio */
-}
-
-/* Estilos para o provérbio */
-.proverbio-banner {
-    background-color: #fff; /* Cor branca */
-    padding: 20px;
+    background-color: #f2f2f2;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%; /* Para centralizar verticalmente */
-    margin-top: 20px; /* Espaçamento entre o banner lateral e o provérbio */
+    padding: 10px 0;
+    margin-bottom: 20px;
+    width: 25%;
+    float: right;
 }
 
-/* Estilos para o título do provérbio */
-.proverbio-titulo {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px; /* Espaçamento abaixo do título */
+.proverbio-banner {
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* Restante do seu CSS aqui */
+.direitos-reservados {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    margin-top: 20px;
+}
