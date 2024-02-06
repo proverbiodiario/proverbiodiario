@@ -19,13 +19,19 @@ body {
     background-color: #f2f2f2; /* Cor de fundo cinza claro para o banner de topo */
     padding: 10px 0; /* Espaçamento interno do banner de topo */
     margin-bottom: 20px; /* Espaçamento abaixo do banner de topo */
+    text-align: center; /* Centralizar o texto */
 }
 
 .banner-lateral {
     background-color: #f2f2f2; /* Cor de fundo cinza claro para o banner lateral */
     padding: 10px 0; /* Espaçamento interno do banner lateral */
-    margin-left: auto; /* Margem esquerda automática para alinhar à direita */
-    margin-right: 0; /* Margem direita 0 para alinhar à direita */
+    float: right; /* Alinhar à direita */
+    width: 120px; /* Largura do banner lateral */
+    margin-top: -90px; /* Ajustar para a altura do banner do provérbio */
+}
+
+#proverbio {
+    margin-top: 90px; /* Ajustar para compensar a altura do banner lateral */
 }
 
 footer {
