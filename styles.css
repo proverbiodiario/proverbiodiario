@@ -1,53 +1,47 @@
-/* Estilos gerais */
-body {
-            font-family: Arial, sans-serif;
-            font-size: 18px;
-            line-height: 1.5;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+/* Estilos para o banner do topo */
+.banner-topo {
+                background-color: #ccc;
+                padding: 10px;
+                margin-bottom: 20px;
+                text-align: center; /* Centraliza o texto */
 }
 
-.container {
-            max-width: 300px;
-            margin: 0 auto;
-            padding: 20px;
-}
-
-.banner-topo,
+/* Estilos para o banner lateral */
 .banner-lateral {
-            background-color: #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
+                background-color: #ccc;
+                padding: 10px;
+                margin-bottom: 20px;
 }
 
+/* Estilos para o provérbio */
 .proverbio-banner {
-            background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
+                background-color: #fff;
+                padding: 20px;
+                margin-bottom: 20px;
 }
 
+/* Estilos para o rodapé */
 footer {
-            text-align: center;
-            background-color: #f0f0f0;
-            padding: 20px;
-            margin-top: 20px;
+                text-align: center;
+                background-color: #f0f0f0;
+                padding: 20px;
+                margin-top: 20px;
 }
 
-/* Estilos para dispositivos menores que 768px (tablets e smartphones) */
+/* Estilos responsivos para dispositivos menores que 768px (tablets e smartphones) */
 @media only screen and (max-width: 768px) {
-            .container {
-                            max-width: 100%;
-                            padding: 10px;
-            }
+                .container {
+                                    max-width: 100%;
+                                    padding: 10px;
+                }
 
     .banner-topo,
-            .banner-lateral,
-            .proverbio-banner {
-                            padding: 10px;
-            }
+                .banner-lateral,
+                .proverbio-banner {
+                                    padding: 10px;
+                }
 
     footer {
-                    font-size: 14px;
+                        font-size: 14px;
     }
 }
