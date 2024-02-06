@@ -2,7 +2,7 @@ body {
           font-family: Arial, sans-serif;
           margin: 0;
           padding: 0;
-          background-color: #f4f4f4;
+          background-color: #87CEFA;
 }
 
 .container {
@@ -28,7 +28,7 @@ body {
 }
 
 .proverbio-banner {
-          background-color: #f9f9f9; /* Cor de fundo do banner de provérbio */
+          background-color: #6495ED; /* Cor de fundo do banner de provérbio */
     padding: 100px; /* Adicione algum preenchimento para o banner de provérbio */
     text-align: center; /* Isso centralizará o texto dentro do banner de provérbio */
 }
