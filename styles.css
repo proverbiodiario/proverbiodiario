@@ -1,62 +1,29 @@
 body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-}
-
-.banner-topo,.banner-lateral {
-                background-color: #f2f2f2;
-                padding: 10px;
-                margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
 }
 
 .container {
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 20px;
-}
-
-.proverbio-banner {
-                background-color: #f9f9f9;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-                margin-bottom: 20px;
-}
-
-footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-}
-
-body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-}
-
-.container {
-            max-width: 800px; /* Defina a largura máxima do conteúdo */
+      max-width: 800px; /* Defina a largura máxima do conteúdo */
     margin: 0 auto; /* Isso centralizará o conteúdo horizontalmente */
     padding: 20px;
-            text-align: center; /* Isso centralizará o texto e outros elementos dentro do contêiner */
+      text-align: center; /* Isso centralizará o texto e outros elementos dentro do contêiner */
 }
 
 .banner-topo,.proverbio-banner,.banner-lateral, footer {
-            margin-bottom: 20px; /* Adicione um espaço entre os elementos */
+      margin-bottom: 20px; /* Adicione um espaço entre os elementos */
     background-color: #f9f9f9; /* Cor de fundo dos banners */
     padding: 10px; /* Adicione algum preenchimento para os banners */
 }
 
 footer {
-            background-color: #333; /* Cor de fundo do rodapé */
+      background-color: #333; /* Cor de fundo do rodapé */
     color: #fff; /* Cor do texto do rodapé */
     padding: 20px 0; /* Adicione algum preenchimento vertical para o rodapé */
 }
 
 .banner-topo p,.proverbio-banner p,.banner-lateral p, footer p {
-            margin: 0; /* Remova a margem padrão dos parágrafos */
+      margin: 0; /* Remova a margem padrão dos parágrafos */
 }
