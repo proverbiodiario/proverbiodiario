@@ -7,25 +7,18 @@ function selecionarProverbioAleatorio() {
 // Função para atualizar o provérbio do dia
 function atualizarProverbioDoDia() {
     var dataAtual = new Date();
-    var horaAtual = dataAtual.getUTCHours(); // Obtém a hora em UTC
-    var horaBrasilia = (horaAtual - 3 + 24) % 24; // Ajusta para o horário de Brasília (UTC-3)
+    var horaAtual = dataAtual.getHours();
+    var novoProverbio = selecionarProverbioAleatorio();
 
-    // Se for meia-noite em Brasília, atualize o provérbio
-    if (horaBrasilia === 0) {
-        var novoProverbio = selecionarProverbioAleatorio();
+    // Se for meia-noite ou após, atualize o provérbio
+    if (horaAtual === 0) {
         var proverbioElement = document.getElementById("proverbio");
-        proverbioElement.innerHTML = "<h2 class='proverbio-titulo'>Provérbio do Dia</h2><p>" + novoProverbio + "</p>";
+        proverbioElement.innerHTML = "<p>" + novoProverbio + "</p>";
     }
 }
 
 // Atualizar o provérbio do dia inicialmente
 atualizarProverbioDoDia();
 
-// Calcular o tempo restante até a próxima meia-noite em Brasília e atualizar o provérbio nesse momento
-var dataAtual = new Date();
-var horaAtual = dataAtual.getUTCHours(); // Obtém a hora em UTC
-var minutosRestantes = (24 - horaAtual - 3) * 60; // Calcula os minutos restantes até a próxima meia-noite em Brasília
-var milissegundosRestantes = minutosRestantes * 60000; // Converte minutos em milissegundos
-setTimeout(function() {
-    setInterval(atualizarProverbioDoDia, 86400000); // 86400000 milissegundos = 24 horas
-}, milissegundosRestantes);
+// Atualizar o provérbio a cada hora para verificar se é meia-noite
+setInterval(atualizarProverbioDoDia, 3600000); // 3600000 milissegundos = 1 hora
