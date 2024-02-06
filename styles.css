@@ -57,4 +57,16 @@ body {
                   float: none;
                   height: auto;
     }
-}
+
+          /* Estilos para o provérbio */
+          .proverbio-banner {
+                        background-color: #fff;
+                        padding: 20px;
+                        text-align: center;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%; /* Para centralizar verticalmente */
+          }
+
+          /* Restante do seu CSS aqui */
