@@ -17,22 +17,12 @@ body {
     background-color: #f2f2f2;
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 6px;
-}
-
-.banner-lateral {
-    background-color: #f2f2f2;
-    text-align: center;
-    padding: 10px 0;
     margin-bottom: 20px;
-    width: 25%;
-    float: right;
-    margin-top: -6px;
 }
 
 .proverbio-banner {
     background-color: #f9f9f9;
-    text-align: left;
+    text-align: center;
     padding: 20px;
     margin-bottom: 20px;
 }
