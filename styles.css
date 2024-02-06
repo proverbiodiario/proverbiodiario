@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -17,7 +17,7 @@ body {
     background-color: #f2f2f2;
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
 .banner-lateral {
@@ -27,11 +27,12 @@ body {
     margin-bottom: 20px;
     width: 25%;
     float: right;
+    margin-top: -6px;
 }
 
 .proverbio-banner {
     background-color: #f9f9f9;
-    text-align: center;
+    text-align: left;
     padding: 20px;
     margin-bottom: 20px;
 }
