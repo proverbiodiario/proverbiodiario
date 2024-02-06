@@ -1,72 +1,37 @@
 /* Estilos para o banner do topo */
 .banner-topo {
-          background-color: #ccc;
-          padding: 10px;
-          text-align: center;
+    background-color: #ccc; /* Cor cinza claro */
+    padding: 20px;
+    text-align: center;
+    height: 100px; /* Altura do banner */
 }
 
 /* Estilos para o banner lateral */
 .banner-lateral {
-          background-color: #ccc;
-          padding: 10px;
-          float: right;
-          width: 25px; /* 75% mais fino do que o banner do topo */
-    height: 100vh; /* Ocupa a altura total da tela */
-    display: flex;
-          justify-content: center;
-          align-items: center;
+    background-color: #ccc; /* Cor cinza claro */
+    padding: 20px;
+    height: 300px; /* Altura do banner */
+    float: right; /* Para alinhar à direita */
+    margin-left: 20px; /* Margem à esquerda para separação do provérbio */
 }
 
 /* Estilos para o provérbio */
 .proverbio-banner {
-          background-color: #fff;
-          padding: 20px;
-          text-align: center;
-          display: inline-block;
-          vertical-align: top; /* Alinha com o topo do banner lateral */
+    background-color: #fff; /* Cor branca */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Para centralizar verticalmente */
+    margin-top: 20px; /* Espaçamento entre o banner lateral e o provérbio */
 }
 
-/* Estilos para o rodapé */
-footer {
-          text-align: center;
-          background-color: #f0f0f0;
-          padding: 20px;
-          margin-top: 20px;
+/* Estilos para o título do provérbio */
+.proverbio-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
 }
 
-/* Estilos gerais */
-body {
-          margin: 0;
-          font-family: Arial, sans-serif;
-}
-
-.container {
-          max-width: 1200px;
-          margin: 0 auto;
-          padding: 20px;
-}
-
-/* Estilos responsivos para dispositivos menores que 768px (tablets e smartphones) */
-@media only screen and (max-width: 768px) {
-          .container {
-                        padding: 10px;
-          }
-
-    .banner-lateral {
-                  width: 100%;
-                  float: none;
-                  height: auto;
-    }
-
-          /* Estilos para o provérbio */
-          .proverbio-banner {
-                        background-color: #fff;
-                        padding: 20px;
-                        text-align: center;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 100%; /* Para centralizar verticalmente */
-          }
-
-          /* Restante do seu CSS aqui */
+/* Restante do seu CSS aqui */
