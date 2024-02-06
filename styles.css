@@ -1,51 +1,53 @@
+/* Estilos gerais */
 body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9; /* Cor de fundo branca gelo */
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
 }
 
 .container {
-        max-width: 800px; /* Ajuste a largura máxima do conteúdo */
-    margin: 20px auto; /* Centraliza o conteúdo na página */
-    padding: 20px;
-        background-color: #fff; /* Cor de fundo branca */
-    border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
 }
 
-#proverbio {
-        padding: 20px;
-        margin-bottom: 20px;
-        background-color: #f2f2f2; /* Cor de fundo cinza claro */
-    border-radius: 6px;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-        font-size: 18px;
-}
-
-.banner-topo {
-        background-color: #f2f2f2; /* Cor de fundo cinza claro */
-    padding: 150px 0; /* Espaçamento interno do banner */
-    border-radius: 8px;
-        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
+.banner-topo,
 .banner-lateral {
-        position: fixed; /* Permanece fixo na página */
-    top: 80px; /* Posicionamento vertical */
-    right: 20px; /* Posicionamento horizontal */
-    width: 160px; /* Largura do banner lateral */
-    height: 400px; /* Altura do banner lateral */
-    background-color: #f2f2f2; /* Cor de fundo cinza claro */
-    border-radius: 6px;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+            background-color: #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+}
+
+.proverbio-banner {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
 }
 
 footer {
-        text-align: center;
-        background-color: #f2f2f2; /* Cor de fundo cinza claro */
-    padding: 20px;
-        margin-top: 20px;
-        border-radius: 6px;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-top: 20px;
+}
+
+/* Estilos para dispositivos menores que 768px (tablets e smartphones) */
+@media only screen and (max-width: 768px) {
+            .container {
+                            max-width: 100%;
+                            padding: 10px;
+            }
+
+    .banner-topo,
+            .banner-lateral,
+            .proverbio-banner {
+                            padding: 10px;
+            }
+
+    footer {
+                    font-size: 14px;
+    }
 }
