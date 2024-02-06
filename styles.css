@@ -22,13 +22,6 @@ body {
     text-align: center; /* Centralizar o texto */
 }
 
-.banner-lateral {
-    background-color: #f2f2f2; /* Cor de fundo cinza claro para o banner lateral */
-    padding: 10px 0; /* Espaçamento interno do banner lateral */
-    float: right; /* Alinhar à direita */
-    width: 120px; /* Largura do banner lateral */
-    margin-top: -90px; /* Ajustar para a altura do banner do provérbio */
-}
 
 #proverbio {
     margin-top: 90px; /* Ajustar para compensar a altura do banner lateral */
