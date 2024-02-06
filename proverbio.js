@@ -21,7 +21,4 @@ var provérbios = [
     "Assim são as veredas de todo aquele que usa de cobiça; ela põe a perder a alma dos que a possuem."
 ];
 
-// Exportar a lista de provérbios para uso em outros scripts, se necessário
-if (typeof module !== 'undefined' && module.exports) {
-    module.exports = provérbios;
-    }
+
