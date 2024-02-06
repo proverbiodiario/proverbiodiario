@@ -1,61 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Provérbios do Dia</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Provérbios do Dia</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
 
-<div class="banner-topo">
-    <!-- Banner para anúncios no topo -->
-    <p>Anúncio Topo</p>
-</div>
+    <div class="banner-topo">
+            <!-- Banner para anúncios no topo -->
+            <p>Anúncio Topo</p>
+    </div>
 
 <div class="container">
     <div id="proverbio" class="proverbio-banner">
-        <!-- Provável para exibir o provérbio -->
-        <p>Aqui vem o provérbio do dia</p>
+            <!-- Provável para exibir o provérbio -->
+            <p>Aqui vem o provérbio do dia</p>
     </div>
 
     <!-- Banner lateral para anúncios -->
     <div class="banner-lateral">
-        <p>Anúncio Lateral</p>
+            <p>Anúncio Lateral</p>
     </div>
 </div>
 
 <footer>
-    <p>&copy; Todos os direitos reservados | Washington Verdan</p>
+        <p>&copy; Todos os direitos reservados | Washington Verdan</p>p>
 </footer>
 
-<script src="proverbio.js"></script>
-<script>
-    // Função para selecionar um provérbio aleatório
-    function selecionarProverbioAleatorio() {
-        var indice = Math.floor(Math.random() * provérbios.length);
-        return provérbios[indice];
-    }
-
-    // Função para atualizar o provérbio do dia
-    function atualizarProverbioDoDia() {
-        var dataAtual = new Date();
-        var horaAtual = dataAtual.getHours();
-        var novoProverbio = selecionarProverbioAleatorio();
-
-        // Se for meia-noite ou após, atualize o provérbio
-        if (horaAtual === 0) {
-            var proverbioElement = document.getElementById("proverbio");
-            proverbioElement.innerHTML = "<p>" + novoProverbio + "</p>";
-        }
-    }
-
-    // Atualizar o provérbio do dia inicialmente
-    atualizarProverbioDoDia();
-
-    // Atualizar o provérbio a cada hora para verificar se é meia-noite
-    setInterval(atualizarProverbioDoDia, 3600000); // 3600000 milissegundos = 1 hora
-</script>
+    <script src="proverbio.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
+</footer></p></p>
+</body></title>
+    </head>
