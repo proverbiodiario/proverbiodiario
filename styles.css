@@ -10,7 +10,7 @@
           background-color: #ccc;
           padding: 10px;
           float: right;
-          width: 25%; /* 75% mais fino do que o banner do topo */
+          width: 25px; /* 75% mais fino do que o banner do topo */
     height: 100vh; /* Ocupa a altura total da tela */
     display: flex;
           justify-content: center;
