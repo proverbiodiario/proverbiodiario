@@ -14,7 +14,7 @@ body {
 
 .banner-topo {
           background-color: #f9f9f9; /* Cor de fundo do banner de topo */
-    padding: 10px; /* Adicione algum preenchimento para o banner de topo */
+    padding: 50px; /* Adicione algum preenchimento para o banner de topo */
     text-align: center; /* Isso centralizará o texto dentro do banner de topo */
 }
 
@@ -24,12 +24,12 @@ body {
     right: 0; /* Alinhe o banner lateral à direita */
     transform: translateY(-50%); /* Ajusta verticalmente para o centro do contêiner */
     background-color: #f9f9f9; /* Cor de fundo do banner lateral */
-    padding: 10px; /* Adicione algum preenchimento para o banner lateral */
+    padding: 50px; /* Adicione algum preenchimento para o banner lateral */
 }
 
 .proverbio-banner {
           background-color: #f9f9f9; /* Cor de fundo do banner de provérbio */
-    padding: 10px; /* Adicione algum preenchimento para o banner de provérbio */
+    padding: 100px; /* Adicione algum preenchimento para o banner de provérbio */
     text-align: center; /* Isso centralizará o texto dentro do banner de provérbio */
 }
 
@@ -40,5 +40,5 @@ footer {
 }
 
 .banner-topo p,.proverbio-banner p,.banner-lateral p, footer p {
-          margin: 0; /* Remova a margem padrão dos parágrafos */
+     text-align: center; /* Remova a margem padrão dos parágrafos */
 }
