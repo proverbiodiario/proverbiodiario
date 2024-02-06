@@ -42,6 +42,51 @@ footer {
     color: #666; /* Cor do texto cinza para o rodapé */
 }
 
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9; /* Cor de fundo branca gelo */
+}
+
+.container {
+        max-width: 800px; /* Ajuste a largura máxima do conteúdo */
+        margin: 20px auto; /* Centraliza o conteúdo na página */
+        padding: 20px;
+        background-color: #fff; /* Cor de fundo branca */
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+}
+
+#proverbio {
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #f2f2f2; /* Cor de fundo cinza claro */
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+}
+
+.banner-lateral {
+        position: fixed; /* Permanece fixo na página */
+        top: 160px; /* Posicionamento vertical */
+        right: 20px; /* Posicionamento horizontal */
+        width: 160px; /* Largura do banner lateral */
+        height: 400px; /* Altura do banner lateral */
+        background-color: #f2f2f2; /* Cor de fundo cinza claro */
+        border-radius: 6px;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+        text-align: center;
+        background-color: #f2f2f2; /* Cor de fundo cinza claro */
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 6px;
+}
+
 footer p {
     margin: 0;
     font-size: 14px;
