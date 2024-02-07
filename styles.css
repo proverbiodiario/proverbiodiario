@@ -1,50 +1,57 @@
+/* Estilos gerais */
 body {
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
+}
+
+/* Estilos do banner no topo */
+.banner-topo {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.banner-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos do banner do provérbio */
+.proverbio-banner {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.banner-topo {
-    background-color: #f2f2f2;
+.proverbio-titulo {
+    color: #333;
+}
+
+.proverbio-texto {
+    color: blue;
+    font-size: 24px;
+}
+
+.proverbio-fonte {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-bottom: 20px;
 }
-
-/* Estilos para destacar apenas o texto do provérbio */
-.destaque-proverbio {
-    font-size: 24px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    color: blue; /* Cor do texto definida como azul */
-    /* Adicione outros estilos desejados para destacar o provérbio */
-}
-
-
-.proverbio-banner {
-    background-color: #f9f9f9;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.direitos-reservados {
-    text-align: center;
-    font-size: 14px;
-    color: #333;
-    margin-top: 20px;
-}
-
-.fonte-biblia {
-    font-size: 14px; /* Tamanho da fonte desejado */
-    /* Outros estilos, se necessário */
-}
-
