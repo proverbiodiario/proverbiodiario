@@ -1,5 +1,5 @@
 // Importa o array de provérbios do arquivo proverbio.js
-import { provérbios } from '/proverbio.js';
+import { provérbios } from '/proverbios.js';
 
 // Seleciona um provérbio aleatório
 function selecionarProverbioAleatorio() {
@@ -9,7 +9,7 @@ function selecionarProverbioAleatorio() {
 
 // Função para atualizar o provérbio na página HTML
 function atualizarProverbioNaPagina(proverbio) {
-        var proverbioElement = document.getElementById("proverbio");
+        var proverbioElement = document.getElementById("proverbios");
         proverbioElement.innerHTML = "<h2 class='proverbio-titulo'>Provérbio do Dia</h2>" +
                                               "<p class='proverbio-texto'>" + provérbio + "</p>" +
                                               "<p class='proverbio-fonte'>Fonte: Bíblia Sagrada</p>";
