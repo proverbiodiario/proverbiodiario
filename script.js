@@ -20,6 +20,3 @@ function atualizarProverbioDoDia() {
 
 // Atualizar o provérbio do dia inicialmente
 atualizarProverbioDoDia();
-
-// Atualizar o provérbio a cada hora para verificar se é meia-noite
-setInterval(atualizarProverbioDoDia, 3600000); // 3600000 milissegundos = 1 hora
