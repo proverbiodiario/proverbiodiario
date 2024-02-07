@@ -1,4 +1,4 @@
-import { provérbios } from './proverbio.js'; // Importa o array de provérbios
+const { selecionarProverbioAleatorio } = require('./proverbios.js');
 
 // Função para selecionar um provérbio aleatório
 function selecionarProverbioAleatorio() {
