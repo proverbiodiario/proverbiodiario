@@ -1,4 +1,4 @@
-// Importa o array de provérbios do arquivo proverbio.js
+// Importa o array de provérbios do arquivo proverbios.js
 import { provérbios } from '/proverbios.js';
 
 // Seleciona um provérbio aleatório
@@ -8,7 +8,7 @@ function selecionarProverbioAleatorio() {
 }
 
 // Função para atualizar o provérbio na página HTML
-function atualizarProverbioNaPagina(proverbio) {
+function atualizarProverbioNaPagina(proverbios) {
         var proverbioElement = document.getElementById("proverbios");
         proverbioElement.innerHTML = "<h2 class='proverbio-titulo'>Provérbio do Dia</h2>" +
                                               "<p class='proverbio-texto'>" + provérbio + "</p>" +
