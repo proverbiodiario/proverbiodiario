@@ -20,7 +20,6 @@ var provérbios = [
     "Ora, estes se põem à espreita de sangue, armam ciladas contra a sua própria vida.",
     "Assim são as veredas de todo aquele que usa de cobiça; ela põe a perder a alma dos que a possuem."
 ];
-
 // Seleciona o provérbio do dia
 var provérbioDoDia = proverbios[Math.floor(Math.random() * proverbios.length)];
 
@@ -40,7 +39,9 @@ function atualizarProverbioDoDia() {
 // Função para atualizar o provérbio na página HTML
 function atualizarProverbioNaPagina(proverbio) {
     var proverbioElement = document.getElementById("proverbio");
-    proverbioElement.innerHTML = "<p>" + proverbio + "</p>";
+    proverbioElement.innerHTML = "<h2 class='proverbio-titulo'>Provérbio do Dia</h2>" +
+                                  "<p class='proverbio-texto'>" + provérbio + "</p>" +
+                                  "<p class='proverbio-fonte'>Fonte: Bíblia Sagrada</p>";
 }
 
 // Chamada inicial para exibir o provérbio do dia
