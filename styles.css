@@ -49,7 +49,7 @@ body {
 }
 
 footer {
-    height: 100px; /* Defina a altura desejada em pixels */
+    height: 50px; /* Defina a altura desejada em pixels */
     background-color: #f0f0f0; /* Cor de fundo para destacar a área dos direitos reservados */
     text-align: center; /* Centralize o texto horizontalmente */
     padding-top: 30px; /* Adicione espaço acima do texto para melhorar o alinhamento vertical */
