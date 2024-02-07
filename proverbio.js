@@ -6,5 +6,3 @@ var provérbios = [
     // Adicione mais provérbios conforme necessário
 ];
 
-// Exporte o array para uso externo
-export { provérbios };
