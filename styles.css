@@ -1,33 +1,55 @@
 /* Estilos globais */
 body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
 }
 
-header, footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
+/* Estilos do cabeçalho */
+.banner-topo {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
 }
 
-nav ul {
-            list-style-type: none;
-            padding: 0;
+.banner-topo h1,.banner-topo p {
+                margin: 0;
 }
 
-nav ul li {
-            display: inline;
-            margin-right: 10px;
+/* Estilos da barra de navegação lateral */
+.banner-lateral {
+                background-color: #444;
+                color: #fff;
+                width: 200px;
+                position: fixed;
+                top: 100px;
+                left: 0;
+                padding: 20px;
 }
 
-main {
-            padding: 20px;
+.banner-lateral ul {
+                list-style-type: none;
+                padding: 0;
 }
 
+.banner-lateral ul li {
+                margin-bottom: 10px;
+}
+
+/* Estilos dos provérbios */
 .proverbios {
-            padding: 20px;
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
+                text-align: center;
+                margin-top: 100px; /* Para compensar a barra lateral fixa */
+}
+
+/* Estilos do rodapé */
+footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 20px 0;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
 }
