@@ -1,32 +1,33 @@
-/* Estilos para o site */
-.banner-topo {
-        /* Estilos para o banner no topo */
+/* Estilos globais */
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
 }
 
-.banner-link {
-        /* Estilos para o link do banner */
+header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
 }
 
-.container {
-        /* Estilos para o contêiner principal */
+nav ul {
+            list-style-type: none;
+            padding: 0;
 }
 
-.proverbio-banner {
-        /* Estilos para o banner do provérbio */
+nav ul li {
+            display: inline;
+            margin-right: 10px;
 }
 
-.proverbio-titulo {
-        /* Estilos para o título do provérbio */
+main {
+            padding: 20px;
 }
 
-.proverbio-texto {
-        /* Estilos para o texto do provérbio */
-}
-
-.proverbio-fonte {
-        /* Estilos para a fonte do provérbio */
-}
-
-.direitos-reservados {
-        /* Estilos para o rodapé */
+.proverbios {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
 }
