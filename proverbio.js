@@ -1,4 +1,4 @@
-// Lista de provérbios
+// Array de provérbios
 var provérbios = [
     "Provérbios de Salomão, filho de Davi, rei de Israel:",
     "Para se conhecer a sabedoria e a instrução; para se entenderem as palavras de entendimento;",
@@ -20,5 +20,21 @@ var provérbios = [
     "Ora, estes se põem à espreita de sangue, armam ciladas contra a sua própria vida.",
     "Assim são as veredas de todo aquele que usa de cobiça; ela põe a perder a alma dos que a possuem."
 ];
+
+// Função para selecionar um provérbio aleatório
+function selecionarProverbioAleatorio() {
+    var indice = Math.floor(Math.random() * provérbios.length);
+    return provérbios[indice];
+}
+
+// Função para atualizar o provérbio do dia
+function atualizarProverbioDoDia() {
+    var novoProverbio = selecionarProverbioAleatorio();
+    var proverbioTexto = document.querySelector(".proverbio-texto");
+    proverbioTexto.textContent = novoProverbio;
+}
+
+// Atualizar o provérbio do dia inicialmente
+atualizarProverbioDoDia();
 
 
