@@ -48,10 +48,13 @@ body {
     color: #888;
 }
 
-/* Estilos do rodapé */
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    height: 100px; /* Defina a altura desejada em pixels */
+    background-color: #f0f0f0; /* Cor de fundo para destacar a área dos direitos reservados */
+    text-align: center; /* Centralize o texto horizontalmente */
+    padding-top: 30px; /* Adicione espaço acima do texto para melhorar o alinhamento vertical */
+}
+
+.direitos-reservados {
+    font-size: 14px; /* Tamanho da fonte para os direitos reservados */
 }
