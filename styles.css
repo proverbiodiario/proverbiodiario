@@ -1,60 +1,32 @@
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.container {
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
-}
-
-/* Estilos do banner no topo */
+/* Estilos para o site */
 .banner-topo {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
+        /* Estilos para o banner no topo */
 }
 
 .banner-link {
-    color: #fff;
-    text-decoration: none;
+        /* Estilos para o link do banner */
 }
 
-/* Estilos do banner do provérbio */
+.container {
+        /* Estilos para o contêiner principal */
+}
+
 .proverbio-banner {
-    margin-top: 20px;
-    text-align: center;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* Estilos para o banner do provérbio */
 }
 
 .proverbio-titulo {
-    color: #333;
+        /* Estilos para o título do provérbio */
 }
 
 .proverbio-texto {
-    color: blue;
-    font-size: 20px;
+        /* Estilos para o texto do provérbio */
 }
 
 .proverbio-fonte {
-    font-size: 14px;
-    color: #888;
-}
-
-footer {
-    height: 20px; /* Defina a altura desejada em pixels */
-    background-color: #f2f2f2; /* Cor de fundo para destacar a área dos direitos reservados */
-    text-align: center; /* Centralize o texto horizontalmente */
-    padding-top: 30px; /* Adicione espaço acima do texto para melhorar o alinhamento vertical */
+        /* Estilos para a fonte do provérbio */
 }
 
 .direitos-reservados {
-    font-size: 10px; /* Tamanho da fonte para os direitos reservados */
+        /* Estilos para o rodapé */
 }
