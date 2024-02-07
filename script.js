@@ -8,12 +8,13 @@ function selecionarProverbioAleatorio() {
 function atualizarProverbioDoDia() {
     var dataAtual = new Date();
     var horaAtual = dataAtual.getHours();
-    var novoProverbio = selecionarProverbioAleatorio();
 
-    // Se for meia-noite ou após, atualize o provérbio
+    // Se for meia-noite, atualize o provérbio
     if (horaAtual === 0) {
-        var proverbioElement = document.querySelector(".proverbio-texto");
-        proverbioElement.textContent = novoProverbio;
+        var proverbioElement = document.getElementById("proverbio");
+        var novoProverbio = selecionarProverbioAleatorio();
+
+        proverbioElement.innerHTML = "<h2 class='proverbio-titulo'>Provérbio do Dia</h2><p class='proverbio-texto'>" + novoProverbio + "</p>";
     }
 }
 
