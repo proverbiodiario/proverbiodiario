@@ -27,36 +27,11 @@
 <footer>
     <p class="direitos-reservados">&copy; Todos os direitos reservados | Washington Verdan</p>
 </footer>
-
-<script src="proverbio.js"></script>
-<script src="script.js"></script>
-
 <!-- Referência ao arquivo proverbio.js -->
 <script src="proverbio.js"></script>
 
 <!-- Script para atualizar o provérbio do dia -->
-<script>
-    // Função para atualizar o provérbio do dia
-    function atualizarProverbioDoDia() {
-        var dataAtual = new Date();
-        var horaAtual = dataAtual.getHours();
+<script src="script.js"></script>
 
-        // Se for meia-noite ou após, atualize o provérbio
-        if (horaAtual === 0) {
-            var proverbioElement = document.getElementById("proverbio");
-            var novoProverbio = selecionarProverbioAleatorio();
-
-            // Atualiza o texto do provérbio no HTML
-            proverbioElement.innerHTML = "<h2 class='proverbio-titulo'>Provérbio do Dia</h2><p class='proverbio-texto'>" + novoProverbio + "</p>";
-        }
-    }
-
-    // Atualizar o provérbio do dia inicialmente
-    atualizarProverbioDoDia();
-
-    // Atualizar o provérbio a cada hora para verificar se é meia-noite
-    setInterval(atualizarProverbioDoDia, 3600000); // 3600000 milissegundos = 1 hora
-            </script>
-    
 </body>
 </html>
