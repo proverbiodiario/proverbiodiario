@@ -20,9 +20,14 @@ body {
     margin-bottom: 20px;
 }
 
-.proverbio-fonte {
-    font-size: 12px;
+/* Estilos para destacar apenas o texto do provérbio */
+.destaque-proverbio {
+    font-size: 24px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    color: blue; /* Cor do texto definida como azul */
+    /* Adicione outros estilos desejados para destacar o provérbio */
 }
+
 
 .proverbio-banner {
     background-color: #f9f9f9;
@@ -37,3 +42,4 @@ body {
     color: #333;
     margin-top: 20px;
 }
+
