@@ -1,23 +1,13 @@
-// Array de provérbios
-var proverbios = [
-      "Provérbio 1",
-      "Provérbio 2",
-      "Provérbio 3",
-      // Adicione mais provérbios conforme necessário
-  ];
+// Verifica se há um provérbio armazenado localmente
+var provérbioArmazenado = localStorage.getItem('proverbio');
 
-// Seleciona um provérbio aleatório
-function selecionarProverbioAleatorio() {
-      var indice = Math.floor(Math.random() * proverbios.length);
-      return proverbios[indice];
+// Se não houver um provérbio armazenado, escolha um aleatoriamente e armazene-o
+if (!provérbioArmazenado) {
+    var indiceAleatorio = Math.floor(Math.random() * provérbios.length);
+    provérbioArmazenado = provérbios[indiceAleatorio];
+    localStorage.setItem('proverbio', provérbioArmazenado);
 }
 
-// Função para atualizar o provérbio na página
-function atualizarProverbio() {
-      var proverbioElement = document.getElementById("proverbio");
-      var novoProverbio = selecionarProverbioAleatorio();
-      proverbioElement.textContent = novoProverbio;
-}
-
-// Chamada inicial para exibir um provérbio quando a página é carregada
-atualizarProverbio();
+// Exibe o provérbio armazenado na página
+var provérbioElement = document.getElementById('proverbio');
+provérbioElement.innerText = provérbioArmazenado;
