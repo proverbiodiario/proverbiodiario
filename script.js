@@ -1,8 +1,4 @@
-// Função para selecionar um provérbio aleatório
-function selecionarProverbioAleatorio() {
-    var indice = Math.floor(Math.random() * provérbios.length);
-    return provérbios[indice];
-}
+import { selecionarProverbioAleatorio } from './proverbio.js';
 
 // Função para atualizar o provérbio do dia
 function atualizarProverbioDoDia() {
@@ -11,12 +7,15 @@ function atualizarProverbioDoDia() {
 
     // Se for meia-noite, atualize o provérbio
     if (horaAtual === 0) {
-        var proverbioElement = document.getElementById("proverbio");
+        var provérbioElement = document.getElementById("proverbio-texto");
         var novoProverbio = selecionarProverbioAleatorio();
 
-        proverbioElement.innerHTML = "<h2 class='proverbio-titulo'>Provérbio do Dia</h2><p class='proverbio-texto'>" + novoProverbio + "</p>";
+        provérbioElement.textContent = novoProverbio;
     }
 }
 
-// Atualizar o provérbio do dia inicialmente
+// Chamada inicial para exibir o provérbio do dia
 atualizarProverbioDoDia();
+
+// Atualizar o provérbio a cada hora para verificar se é meia-noite
+setInterval(atualizarProverbioDoDia, 3600000); // 3600000 milissegundos = 1 hora
