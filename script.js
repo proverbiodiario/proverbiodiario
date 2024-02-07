@@ -12,8 +12,8 @@ function atualizarProverbioDoDia() {
 
     // Se for meia-noite ou após, atualize o provérbio
     if (horaAtual === 0) {
-        var proverbioElement = document.getElementById("proverbio");
-        proverbioElement.innerHTML = "<p>" + novoProverbio + "</p>";
+        var proverbioElement = document.querySelector(".proverbio-texto");
+        proverbioElement.textContent = novoProverbio;
     }
 }
 
