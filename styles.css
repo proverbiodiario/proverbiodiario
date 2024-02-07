@@ -20,6 +20,10 @@ body {
     margin-bottom: 20px;
 }
 
+.proverbio-fonte {
+    font-size: 12px;
+}
+
 .proverbio-banner {
     background-color: #f9f9f9;
     text-align: center;
