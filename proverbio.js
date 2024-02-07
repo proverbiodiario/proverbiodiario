@@ -21,20 +21,30 @@ var provérbios = [
     "Assim são as veredas de todo aquele que usa de cobiça; ela põe a perder a alma dos que a possuem."
 ];
 
-// Função para selecionar um provérbio aleatório
-function selecionarProverbioAleatorio() {
-    var indice = Math.floor(Math.random() * provérbios.length);
-    return provérbios[indice];
-}
+// Seleciona o provérbio do dia
+var provérbioDoDia = proverbios[Math.floor(Math.random() * proverbios.length)];
 
-// Função para atualizar o provérbio do dia
+// Função para atualizar o provérbio apenas à meia-noite
 function atualizarProverbioDoDia() {
-    var novoProverbio = selecionarProverbioAleatorio();
-    var proverbioTexto = document.querySelector(".proverbio-texto");
-    proverbioTexto.textContent = novoProverbio;
+    var dataAtual = new Date();
+    var horaAtual = dataAtual.getHours();
+
+    // Se for meia-noite, atualize o provérbio
+    if (horaAtual === 0) {
+        // Seleciona um novo provérbio para o próximo dia
+        provérbioDoDia = proverbios[Math.floor(Math.random() * proverbios.length)];
+        atualizarProverbioNaPagina(provérbioDoDia);
+    }
 }
 
-// Atualizar o provérbio do dia inicialmente
-atualizarProverbioDoDia();
+// Função para atualizar o provérbio na página HTML
+function atualizarProverbioNaPagina(proverbio) {
+    var proverbioElement = document.getElementById("proverbio");
+    proverbioElement.innerHTML = "<p>" + proverbio + "</p>";
+}
 
+// Chamada inicial para exibir o provérbio do dia
+atualizarProverbioNaPagina(provérbioDoDia);
 
+// Verifica se é meia-noite para atualizar o provérbio
+setInterval(atualizarProverbioDoDia, 3600000); // Verifica a cada hora (3600000 milissegundos)
