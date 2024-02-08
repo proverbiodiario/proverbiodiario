@@ -63,3 +63,9 @@ footer {
 @media only screen and (max-width: 599px) {
     /* Adicione seus estilos para telas menores aqui */
 }
+.fonte {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    font-style: italic; /* Adiciona estilo itálico ao texto */
+    color: #888; /* Define a cor do texto */
+    margin-top: 20px; /* Espaçamento superior para separar dos provérbios */
+}
