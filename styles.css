@@ -17,11 +17,7 @@ p {
 }
 
 
-    #banner-topo {
-    width: 800px; /* A largura é definida como 100% da largura da janela do navegador */
-    height: 100px; /* A altura é definida como 60px */
-    align: center;   
-}
+    
 #banner-topo {
     width: 100%; /* A largura é definida como 100% da largura da janela do navegador */
     height: 160px; /* A altura é definida como 80px */
