@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        #banner-topo {
+            /* Adicione seu estilo para o banner do topo aqui */
+        }
+        #banner-meio {
+            /* Adicione seu estilo para o banner do meio aqui */
+        }
+        #rodape {
+            /* Adicione seu estilo para o rodapé aqui */
+        }
+    </style>
 </head>
 <body>
-
-<header class="banner-topo">
-    <h1>SEU CABEÇALHO</h1>
-    <p>Bem-vindo ao meu site!</p>
-</header>
-
-<nav class="banner-lateral">
-    <ul>
-        <li><a href="#">Página Inicial</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
-    </ul>
-</nav>
-
-<main>
-    <div class="proverbios">
-        <h2>Provérbio do Dia</h2>
-        <p id="proverbio">Aqui será exibido o provérbio aleatório.</p>
+    <div id="banner-topo">
+        <!-- Adicione seu banner do topo aqui -->
     </div>
-</main>
 
-<footer>
-    <p>&copy; 2024 Seu Site - Todos os direitos reservados.</p>
-</footer>
+    <div id="banner-meio">
+        <p id="proverbio"></p>
+    </div>
 
-<!-- Adicione a fonte abaixo dos provérbios -->
-<p class="fonte">Fonte: Bíblia Sagrada</p>
+    <div id="rodape">
+        Todos os direitos reservados
+    </div>
 
-<script src="script.js"></script>
+    <script>
+        // Substitua isso pela sua lista de provérbios
+        var proverbios = ["Provérbio 1", "Provérbio 2", "Provérbio 3", "Provérbio 4", "Provérbio 5"];
+
+        window.onload = function() {
+            var proverbioAleatorio = proverbios[Math.floor(Math.random() * proverbios.length)];
+            document.getElementById('proverbio').innerText = proverbioAleatorio;
+        }
+    </script>
 </body>
 </html>
