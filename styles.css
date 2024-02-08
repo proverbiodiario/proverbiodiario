@@ -22,6 +22,10 @@ p {
     width: 800px; /* A largura é definida como 100% da largura da janela do navegador */
     height: 360px; /* A altura é definida como 80px */
     /* ...resto do seu CSS... */
+
+#20240208_111618_0000.jpg {
+        width:800px;
+        heigth: 360px;
 }
 
 
