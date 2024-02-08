@@ -1,101 +1,24 @@
-/* Estilos globais */
-body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-}
+<style>
+    /* Estilos gerais aqui */
 
-/* Estilos do cabeçalho */
-.banner-topo {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 20px 0;
-}
-
-.banner-topo h1,.banner-topo p {
-                margin: 0;
-}
-
-/* Estilos da barra de navegação lateral */
-.banner-lateral {
-                background-color: #444;
-                color: #fff;
-                width: 200px;
-                position: fixed;
-                top: 100px;
-                left: 0;
-                padding: 20px;
-}
-
-.banner-lateral ul {
-                list-style-type: none;
-                padding: 0;
-}
-
-.banner-lateral ul li {
-                margin-bottom: 10px;
-}
-
-/* Estilos dos provérbios */
-.proverbios {
-                text-align: center;
-                margin-top: 100px; /* Para compensar a barra lateral fixa */
-}
-
-/* Estilos do rodapé */
-footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 20px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-}
-
-/* Estilos para telas maiores */
-@media only screen and (min-width: 600px) {
-    /* Adicione seus estilos para telas maiores aqui */
-}
-
-/* Estilos para telas menores */
-@media only screen and (max-width: 599px) {
-    /* Adicione seus estilos para telas menores aqui */
-}
-.fonte {
-    text-align: center; /* Centraliza o texto horizontalmente */
-    font-style: italic; /* Adiciona estilo itálico ao texto */
-    color: #888; /* Define a cor do texto */
-    margin-top: 20px; /* Espaçamento superior para separar dos provérbios */
-}
-/* Define a regra de estilo para o banner com os links */
-.banner-lateral {
-    display: none; /* Oculta o banner por padrão */
-}
-
-/* Define a regra de estilo para os links no banner lateral */
-.banner-lateral ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.banner-lateral li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-/* Define as regras de estilo para dispositivos móveis */
-@media screen and (max-width: 600px) {
-    /* Exibe o banner lateral e ajusta seu posicionamento */
-    .banner-lateral {
-        display: block;
-        margin-top: 20px; /* Define a margem superior para separá-lo do cabeçalho */
+    /* Estilos para telas pequenas (menos de 600px) */
+    @media only screen and (max-width: 600px) {
+        #banner-topo, #banner-meio, #rodape {
+            /* Adicione seus estilos para telas pequenas aqui */
+        }
     }
 
-    /* Ajusta o estilo dos links para ficarem lado a lado */
-    .banner-lateral li {
-        display: block;
-        margin-bottom: 10px; /* Define o espaçamento entre os links */
+    /* Estilos para telas médias (601px a 992px) */
+    @media only screen and (min-width: 601px) and (max-width: 992px) {
+        #banner-topo, #banner-meio, #rodape {
+            /* Adicione seus estilos para telas médias aqui */
+        }
     }
-}
+
+    /* Estilos para telas grandes (maior que 992px) */
+    @media only screen and (min-width: 993px) {
+        #banner-topo, #banner-meio, #rodape {
+            /* Adicione seus estilos para telas grandes aqui */
+        }
+    }
+</style>
