@@ -48,6 +48,8 @@ p {
 
 #fonte {
     font-size: 6px; /* Tamanho do texto para a fonte */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+
 }
 
 /* Estilos para o rodapé */
