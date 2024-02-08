@@ -1,24 +1,68 @@
-<style>
-    /* Estilos gerais aqui */
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
-    /* Estilos para telas pequenas (menos de 600px) */
-    @media only screen and (max-width: 600px) {
-        #banner-topo, #banner-meio, #rodape {
-            /* Adicione seus estilos para telas pequenas aqui */
-        }
-    }
+h1 {
+    color: #444;
+}
 
-    /* Estilos para telas médias (601px a 992px) */
-    @media only screen and (min-width: 601px) and (max-width: 992px) {
-        #banner-topo, #banner-meio, #rodape {
-            /* Adicione seus estilos para telas médias aqui */
-        }
-    }
+p {
+    color: #666;
+}
 
-    /* Estilos para telas grandes (maior que 992px) */
-    @media only screen and (min-width: 993px) {
-        #banner-topo, #banner-meio, #rodape {
-            /* Adicione seus estilos para telas grandes aqui */
-        }
+/* Estilos para o banner do topo */
+#banner-topo {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    width: 100%;
+    height: 60px;
+}
+
+/* Estilos para o banner do meio */
+#banner-meio {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 0;
+}
+
+#proverbio {
+    color: blue;
+}
+
+/* Estilos para o rodapé */
+#rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para telas pequenas (menos de 600px) */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
     }
-</style>
+}
+
+/* Estilos para telas médias (601px a 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+/* Estilos para telas grandes (maior que 992px) */
+@media only screen and (min-width: 993px) {
+    body {
+        font-size: 22px;
+    }
+}
