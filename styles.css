@@ -18,7 +18,7 @@ p {
 
 /* Estilos para o banner do topo */
 #banner-topo {
-    background-color: #333;
+    background-color: #cccccc;
     color: #00ff00;
     padding: 20px 0;
     width: 100%;
@@ -38,7 +38,7 @@ p {
 
 /* Estilos para o rodapé */
 #rodape {
-    background-color: #333;
+    background-color: #cccccc;
     color: #00ff00;
     padding: 10px 0;
     position: fixed;
