@@ -14,3 +14,13 @@ if (!provérbioArmazenado) {
 // Exibe o provérbio armazenado na página
 var provérbioElement = document.getElementById('proverbio');
 provérbioElement.innerText = provérbioArmazenado;
+
+<script>
+    window.onload = function() {
+        var dataAtual = new Date();
+        var diaDoAno = Math.floor(dataAtual.getTime() / (1000 * 60 * 60 * 24));
+        var proverbioDoDia = proverbios[diaDoAno % proverbios.length];
+        document.getElementById('proverbio').innerText = proverbioDoDia;
+    }
+</script>
+
