@@ -1,6 +1,6 @@
 // Array de provérbios
 var proverbios = [
-              "Provérbios de Salomão, filho de Davi, rei de Israel:",
+"Provérbios de Salomão, filho de Davi, rei de Israel:",
 "Para se conhecer a sabedoria e a instrução; para se entenderem as palavras de entendimento;",
 "Para se receber a instrução do entendimento, a justiça, o juízo, e a equidade;",
 "Para dar aos simples, prudência, e aos moços, conhecimento e bom siso;",
@@ -115,8 +115,8 @@ var proverbios = [
 "Porque o perverso é abominável para o Senhor, mas com os sinceros ele tem intimidade.",
 "A maldição do Senhor habita na casa do perverso, mas aos justos ele abençoa.",
 "Certamente ele escarnecerá dos escarnecedores, mas dará graça aos mansos.",
-"Os sábios herdarão honra, mas os loucos tomam sobre si confusão.",
-              // Adicione mais provérbios conforme necessário
+"Os sábios herdarão honra, mas os loucos tomam sobre si confusão."
+// Adicione mais provérbios conforme necessário
           ];
 
 // Seleciona um provérbio aleatório
