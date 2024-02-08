@@ -17,7 +17,7 @@ p {
 }
 
 
-    #banner do topo {
+    #banner-do-topo {
     width: 100%; /* A largura é definida como 100% da largura da janela do navegador */
     height: 30%; /* A altura é definida como 60px */
         
@@ -29,7 +29,7 @@ p {
 #banner-meio {
     background-color: #fff;
     color: #333;
-    padding: 50px 20px; /* Aumenta o padding vertical para 50px */
+    padding: 100px 20px; /* Aumenta o padding vertical para 50px */
     display: flex; /* Usa flexbox para centralizar o conteúdo */
     flex-direction: column; /* Alinha os itens em uma coluna */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
@@ -43,7 +43,7 @@ p {
 }
 
 #fonte {
-    font-size: 16px; /* Tamanho do texto para a fonte */
+    font-size: 36px; /* Tamanho do texto para a fonte */
 }
 
 /* Estilos para o rodapé */
