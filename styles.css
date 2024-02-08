@@ -19,7 +19,7 @@ p {
 /* Estilos para o banner do topo */
 #banner-topo {
     background-color: #333;
-    color: #fff;
+    color: #cccccc;
     padding: 20px 0;
     width: 100%;
     height: 60px;
@@ -39,7 +39,7 @@ p {
 /* Estilos para o rodapé */
 #rodape {
     background-color: #333;
-    color: #fff;
+    color: #cccccc;
     padding: 10px 0;
     position: fixed;
     bottom: 0;
