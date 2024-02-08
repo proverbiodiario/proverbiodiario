@@ -22,6 +22,12 @@ p {
     height: 100px; /* A altura é definida como 60px */
     align: center;   
 }
+#banner-topo {
+    width: 100%; /* A largura é definida como 100% da largura da janela do navegador */
+    height: 80px; /* A altura é definida como 80px */
+    /* ...resto do seu CSS... */
+}
+
 
     
 
@@ -35,6 +41,8 @@ p {
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
 }
+
+
 
 
 #proverbio {
