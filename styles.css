@@ -20,7 +20,7 @@ p {
     
 #banner-topo {
     width: 100%; /* A largura é definida como 100% da largura da janela do navegador */
-    height: 360px; /* A altura é definida como 80px */
+    height: 200px; /* A altura é definida como 80px */
     /* ...resto do seu CSS... */
 
 #banner-meio {
@@ -34,7 +34,7 @@ p {
 }
 
 #dia {
-    font-size: 40px; /* Tamanho do texto para a fonte */
+    font-size: 80px; /* Tamanho do texto para a fonte */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     color: black;
     align-items: center; /* Centraliza o conteúdo verticalmente */
@@ -43,7 +43,7 @@ p {
 
 #proverbio {
     color: blue;
-    font-size: 46px; /* Tamanho maior para o texto do provérbio */
+    font-size: 76px; /* Tamanho maior para o texto do provérbio */
 }
 
 #fonte {
