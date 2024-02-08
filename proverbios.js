@@ -18,7 +18,7 @@ var proverbios = [
 "Porque os pés deles correm para o mal, e se apressam a derramar sangue.",
 "Sem razão se estende a rede diante de todo o olho que há nas asas;",
 "Ora, estes se põem à espreita de sangue, armam ciladas contra a sua própria vida.",
-"Assim são as veredas de todo aquele que usa de cobiça; ela põe a perder a alma dos que a possuem."
+"Assim são as veredas de todo aquele que usa de cobiça; ela põe a perder a alma dos que a possuem.", 
 "A sabedoria clama lá fora; pelas ruas levanta a sua voz.",
 "Nas esquinas movimentadas ela brada; nas entradas das portas da cidade profere as suas palavras:",
 "Até quando vocês, inexperientes, irão contentar-se com a sua inexperiência? E vocês, zombadores, até quando terão prazer na zombaria? E vocês, tolos, até quando desprezarão o conhecimento?",
@@ -115,7 +115,7 @@ var proverbios = [
 "Porque o perverso é abominável para o Senhor, mas com os sinceros ele tem intimidade.",
 "A maldição do Senhor habita na casa do perverso, mas aos justos ele abençoa.",
 "Certamente ele escarnecerá dos escarnecedores, mas dará graça aos mansos.",
-"Os sábios herdarão honra, mas os loucos tomam sobre si confusão."
+"Os sábios herdarão honra, mas os loucos tomam sobre si confusão.",
               // Adicione mais provérbios conforme necessário
           ];
 
