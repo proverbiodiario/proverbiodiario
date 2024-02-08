@@ -69,3 +69,33 @@ footer {
     color: #888; /* Define a cor do texto */
     margin-top: 20px; /* Espaçamento superior para separar dos provérbios */
 }
+/* Define a regra de estilo para o banner com os links */
+.banner-lateral {
+    display: none; /* Oculta o banner por padrão */
+}
+
+/* Define a regra de estilo para os links no banner lateral */
+.banner-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.banner-lateral li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Define as regras de estilo para dispositivos móveis */
+@media screen and (max-width: 600px) {
+    /* Exibe o banner lateral e ajusta seu posicionamento */
+    .banner-lateral {
+        display: block;
+        margin-top: 20px; /* Define a margem superior para separá-lo do cabeçalho */
+    }
+
+    /* Ajusta o estilo dos links para ficarem lado a lado */
+    .banner-lateral li {
+        display: block;
+        margin-bottom: 10px; /* Define o espaçamento entre os links */
+    }
+}
