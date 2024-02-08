@@ -39,11 +39,11 @@ p {
 
 #proverbio {
     color: blue;
-    font-size: 32px; /* Tamanho maior para o texto do provérbio */
+    font-size: 46px; /* Tamanho maior para o texto do provérbio */
 }
 
 #fonte {
-    font-size: 36px; /* Tamanho do texto para a fonte */
+    font-size: 46px; /* Tamanho do texto para a fonte */
 }
 
 /* Estilos para o rodapé */
