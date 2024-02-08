@@ -19,7 +19,7 @@ p {
 
     #banner do topo {
     width: 100%; /* A largura é definida como 100% da largura da janela do navegador */
-    height: 200px; /* A altura é definida como 60px */
+    height: 20%; /* A altura é definida como 60px */
         align:center;
 }
 
