@@ -32,11 +32,13 @@ p {
 }
 
 
+
 #banner-meio {
     background-color: #fff;
     color: #333;
     padding: 50px 20px; /* Aumenta o padding vertical para 50px */
     display: flex; /* Usa flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Alinha os itens em uma coluna */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
 }
