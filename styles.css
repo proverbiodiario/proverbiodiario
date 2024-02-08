@@ -38,6 +38,12 @@ p {
     align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 
+#dia {
+    font-size: 30px; /* Tamanho do texto para a fonte */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    color: black;
+}
+
 
 
 
