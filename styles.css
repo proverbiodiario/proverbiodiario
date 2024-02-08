@@ -39,9 +39,10 @@ p {
 }
 
 #dia {
-    font-size: 30px; /* Tamanho do texto para a fonte */
+    font-size: 80px; /* Tamanho do texto para a fonte */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     color: black;
+    align-items: center; /* Centraliza o conteúdo verticalmente */
 }
 
 
