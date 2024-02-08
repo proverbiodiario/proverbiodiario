@@ -16,6 +16,9 @@ var provérbioElement = document.getElementById('proverbio');
 provérbioElement.innerText = provérbioArmazenado;
 
 <script>
+    // Substitua isso pela sua lista de provérbios
+    var proverbios = [   ];
+
     window.onload = function() {
         var dataAtual = new Date();
         var diaDoAno = Math.floor(dataAtual.getTime() / (1000 * 60 * 60 * 24));
@@ -23,4 +26,5 @@ provérbioElement.innerText = provérbioArmazenado;
         document.getElementById('proverbio').innerText = proverbioDoDia;
     }
 </script>
+
 
