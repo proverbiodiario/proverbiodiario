@@ -23,15 +23,6 @@ p {
     height: 360px; /* A altura é definida como 80px */
     /* ...resto do seu CSS... */
 
-#20240208_111618_0000.jpg {
-        width:800px;
-        heigth: 360px;
-}
-
-
-    
-
-
 #banner-meio {
     background-color: #fff;
     color: #333;
@@ -48,8 +39,6 @@ p {
     color: black;
     align-items: center; /* Centraliza o conteúdo verticalmente */
 }
-
-
 
 
 #proverbio {
