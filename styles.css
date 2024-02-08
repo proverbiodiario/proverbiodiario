@@ -21,14 +21,14 @@ p {
     color: #5d4524; /* Uma cor de texto que lembra pergaminho antigo */
     padding: 20px 0;
     width: 100%;
-    height: 60px;
+    height: 120px;
     display: flex; /* Usa flexbox para centralizar o conteúdo */
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     align-items: center; /* Centraliza o conteúdo verticalmente */
     font-family: 'Times New Roman', serif; /* Uma fonte que parece profissional */
-    font-size: 24px; /* Um tamanho de fonte maior para parecer mais profissional */
+    font-size: 44px; /* Um tamanho de fonte maior para parecer mais profissional */
     text-transform: uppercase; /* Transforma o texto em maiúsculas para um visual mais formal */
-    letter-spacing: 1px; /* Adiciona um espaçamento entre as letras para um visual mais limpo */
+    letter-spacing: 3px; /* Adiciona um espaçamento entre as letras para um visual mais limpo */
 }
 
 
