@@ -54,7 +54,12 @@ footer {
                 width: 100%;
 }
 
-@media only screen and (max-width: 600px) {
-  /* Estilos para telas menores que 600px de largura */
-  /* Por exemplo, ajuste o tamanho do texto, largura do conteúdo, etc. */
+/* Estilos para telas maiores */
+@media only screen and (min-width: 600px) {
+    /* Adicione seus estilos para telas maiores aqui */
+}
+
+/* Estilos para telas menores */
+@media only screen and (max-width: 599px) {
+    /* Adicione seus estilos para telas menores aqui */
 }
