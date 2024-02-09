@@ -554,10 +554,15 @@
         document.getElementById('result').innerText = 'Você acertou ' + pontuacao + ' de ' + perguntas.length + ' perguntas!';
         document.getElementById('restart').addEventListener('click', reiniciarQuiz);
     }
-function reiniciarQuiz() {
+
+    function reiniciarQuiz() {
         perguntaAtual = 0;
         pontuacao = 0;
         mostrarPergunta();
+    }
+
+    mostrarPergunta();
+
     
   
 </script>
