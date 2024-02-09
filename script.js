@@ -32,7 +32,4 @@ window.onload = function() {
         if (performance.navigation.type == 1) {
             window.location.reload(true);
         }
-    }
-    // Atualize o provérbio ao carregar a página
-    atualizarProverbio();
-}
+    
