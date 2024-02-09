@@ -33,5 +33,6 @@ window.onload = function() {
             window.location.reload(true);
         }
     }
+    // Atualize o provérbio ao carregar a página
+    atualizarProverbio();
 }
-atualizarProverbio();
