@@ -1,5 +1,5 @@
 // Importe os provérbios do arquivo proverbios.js
-import { proverbios } from './proverbios.js';
+import { proverbios } from './proverbio.js';
 
 // Função para atualizar o provérbio
 function atualizarProverbio() {
