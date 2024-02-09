@@ -1,48 +1,38 @@
 // Importe os provérbios do arquivo proverbios.js
 import { proverbios } from './proverbios.js';
 
-// Verifica se há um provérbio armazenado localmente
-var provérbioArmazenado = localStorage.getItem('proverbio');
+// Função para atualizar o provérbio
+function atualizarProverbio() {
+    var dataAtual = new Date();
+    // Ajuste para o fuso horário de Brasília
+    var offsetBrasilia = -3; // Brasília é GMT-3
+    var diaDoAno = Math.floor((dataAtual.getTime() + offsetBrasilia * 60 * 60 * 1000) / (1000 * 60 * 60 * 24));
+    var proverbioDoDia = proverbios[diaDoAno % proverbios.length];
+    localStorage.setItem('proverbio', proverbioDoDia);
 
-// Se não houver um provérbio armazenado, escolha um aleatoriamente e armazene-o
-if (!provérbioArmazenado) {
-    var indiceAleatorio = Math.floor(Math.random() * proverbios.length);
-    provérbioArmazenado = proverbios[indiceAleatorio];
-    localStorage.setItem('proverbio', provérbioArmazenado);
+    var proverbioElement = document.getElementById('proverbio');
+    proverbioElement.innerText = proverbioDoDia;
 }
 
-// Exibe o provérbio armazenado na página
-var provérbioElement = document.getElementById('proverbio');
-provérbioElement.innerText = provérbioArmazenado;
+// Calcule o tempo restante até a meia-noite no fuso horário de Brasília
+var agora = new Date();
+var meiaNoite = new Date(agora.getFullYear(), agora.getMonth(), agora.getDate() + 1, 0, 0, 0);
+var offsetBrasilia = -3; // Brasília é GMT-3
+var tempoRestante = meiaNoite - agora + offsetBrasilia * 60 * 60 * 1000;
 
-<script>
-    // Substitua isso pela sua lista de provérbios
-    var proverbios = ["Provérbios de Salomão, filho de Davi, rei de Israel:",
-"Para se conhecer a sabedoria e a instrução; para se entenderem as palavras de entendimento;",
-"Para se receber a instrução do entendimento, a justiça, o juízo, e a equidade;",
-"Para dar aos simples, prudência, e aos moços, conhecimento e bom siso;",
-"O sábio ouvirá e crescerá em conhecimento, e o entendido adquirirá sábios conselhos;",
-"Para entender os provérbios e sua interpretação; as palavras dos sábios e suas proposições.",
-"O temor do Senhor é o princípio do conhecimento, mas os loucos desprezam a sabedoria e a instrução.",
-"Filho meu, ouve a instrução de teu pai, e não deixes o ensinamento de tua mãe;",
-"Porque serão como diadema gracioso em tua cabeça, e colares ao teu pescoço.",
-"Filho meu, se os pecadores procurarem te atrair, não consintas.",
-"Se disserem: Vem conosco; embosquemo-nos para derramar sangue, espreitemos sem motivo o inocente;",
-"Traguemo-los vivos, como a sepultura, e inteiros, como os que descem à cova;",
-"Acharemos toda a sorte de bens preciosos, encheremos as nossas casas de despojos;",
-"Lança a tua sorte conosco; teremos todos uma só bolsa!",
-"Filho meu, não te ponhas a caminho com eles; desvia o teu pé das suas veredas.",
-"Porque os pés deles correm para o mal, e se apressam a derramar sangue.",
-"Sem razão se estende a rede diante de todo o olho que há nas asas;",
-"Ora, estes se põem à espreita de sangue, armam ciladas contra a sua própria vida.",
-"Assim são as veredas de todo aquele que usa de cobiça; ela põe a perder a alma dos que a possuem." ];
+// Inicie o setInterval no horário desejado
+setTimeout(function() {
+    atualizarProverbio();
+    setInterval(atualizarProverbio, 24 * 60 * 60 * 1000);
+}, tempoRestante);
 
-    window.onload = function() {
-        var dataAtual = new Date();
-        var diaDoAno = Math.floor(dataAtual.getTime() / (1000 * 60 * 60 * 24));
-        var proverbioDoDia = proverbios[diaDoAno % proverbios.length];
-        document.getElementById('proverbio').innerText = proverbioDoDia;
+// Limpe o cache toda vez que a página for carregada
+window.onload = function() {
+    if (window.performance) {
+        if (performance.navigation.type == 1) {
+            window.location.reload(true);
+        }
     }
-</script>
-
-
+    // Atualize o provérbio ao carregar a página
+    atualizarProverbio();
+}
