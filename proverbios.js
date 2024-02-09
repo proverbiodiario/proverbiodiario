@@ -1,5 +1,5 @@
 // Array de provérbios
-var proverbios = [
+export const proverbios = [
 "Provérbios de Salomão, filho de Davi, rei de Israel:",
 "Para se conhecer a sabedoria e a instrução; para se entenderem as palavras de entendimento;",
 "Para se receber a instrução do entendimento, a justiça, o juízo, e a equidade;",
