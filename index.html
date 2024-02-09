@@ -22,14 +22,118 @@
     </div>
 
     <div id="quiz-container">
-        <h2 id="question">Pergunta</h2>
-        <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Resposta 1</button>
-            <button class="btn">Resposta 2</button>
-            <button class="btn">Resposta 3</button>
-            <button class="btn">Resposta 4</button>
-        </div>
+    <h2 id="question">Pergunta</h2>
+    <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Resposta 1</button>
+        <button class="btn">Resposta 2</button>
+        <button class="btn">Resposta 3</button>
+        <button class="btn">Resposta 4</button>
     </div>
+</div>
+
+<div id="result-container" style="display: none;">
+    <h2 id="result"></h2>
+    <button id="restart">Reiniciar Quiz</button>
+</div>
+
+<script>
+    var perguntas = [
+        {
+            pergunta: "O que é mais valioso do que a sabedoria?",
+            respostas: ["Ouro", "Prata", "Rubis", "Esmeraldas"],
+            correta: 2
+        },
+        {
+            pergunta: "Quem é considerado o homem mais sábio da Bíblia?",
+            respostas: ["Salomão", "Davi", "Moisés", "José"],
+            correta: 0
+        },
+        {
+            pergunta: "Qual é o princípio da sabedoria?",
+            respostas: ["Inteligência", "Conhecimento", "Temor do Senhor", "Experiência"],
+            correta: 2
+        },
+        {
+            pergunta: "O que a sabedoria traz segundo Provérbios 3:16?",
+            respostas: ["Riquezas e glória", "Paz e alegria", "Vida longa e prosperidade", "Felicidade e amor"],
+            correta: 0
+        },
+        {
+            pergunta: "Quem disse 'A sabedoria é a coisa principal, adquire, pois, a sabedoria, emprega tudo o que possuis na aquisição de entendimento'?",
+            respostas: ["Salomão", "Davi", "Moisés", "José"],
+            correta: 0
+        },
+        {
+            pergunta: "O que o tolo despreza segundo Provérbios 1:7?",
+            respostas: ["O conhecimento", "A justiça", "A instrução", "O temor do Senhor"],
+            correta: 3
+        },
+        {
+            pergunta: "Qual é o começo da sabedoria?",
+            respostas: ["A experiência", "O estudo", "O temor do Senhor", "A observação"],
+            correta: 2
+        },
+        {
+            pergunta: "Segundo Provérbios 9:10, o que é o princípio da sabedoria?",
+            respostas: ["O estudo", "O temor do Senhor", "A experiência", "A observação"],
+            correta: 1
+        },
+        {
+            pergunta: "O que a sabedoria faz segundo Provérbios 9:11?",
+            respostas: ["Prolonga os dias", "Aumenta a riqueza", "Traz saúde", "Dá felicidade"],
+            correta: 0
+        },
+        {
+            pergunta: "O que é melhor do que jóias preciosas segundo Provérbios 3:14?",
+            respostas: ["O ouro", "A prata", "A sabedoria", "A inteligência"],
+            correta: 2
+        }
+    ];
+
+    var perguntaAtual = 0;
+    var pontuacao = 0;
+
+    function mostrarPergunta() {
+        var pergunta = perguntas[perguntaAtual];
+        document.getElementById('question').innerText = pergunta.pergunta;
+        var botoes = document.querySelectorAll('#answer-buttons .btn');
+        for (var i = 0; i < botoes.length; i++) {
+            botoes[i].innerText = pergunta.respostas[i];
+            botoes[i].disabled = false;
+            botoes[i].addEventListener('click', escolherResposta);
+        }
+    }
+
+    function escolherResposta(e) {
+        var botao = e.target;
+        var index = Array.prototype.indexOf.call(botao.parentNode.children, botao);
+        if (index === perguntas[perguntaAtual].correta) {
+            pontuacao++;
+        }
+        perguntaAtual++;
+        if (perguntaAtual < perguntas.length) {
+            mostrarPergunta();
+        } else {
+            mostrarResultado();
+        }
+    }
+
+    function mostrarResultado() {
+        document.getElementById('quiz-container').style.display = 'none';
+        document.getElementById('result-container').style.display = 'block';
+        document.getElementById('result').innerText = 'Você acertou ' + pontuacao + ' de ' + perguntas.length + ' perguntas!';
+        document.getElementById('restart').addEventListener('click', reiniciarQuiz);
+    }
+
+    function reiniciarQuiz() {
+        perguntaAtual = 0;
+        pontuacao = 0;
+        mostrarPergunta();
+    }
+
+    // Mostrar a primeira pergunta ao carregar a página
+    mostrarPergunta();
+    </script>
 
     <div id="result-container" style="display: none;">
         <h2 id="result"></h2>
