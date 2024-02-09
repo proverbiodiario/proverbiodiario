@@ -1,161 +1,42 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-   <link rel="stylesheet" type="text/css" href="styles.css">
-  <script import { proverbios } from './proverbios.js';></script >
-
-</head>  
-    <style>
-        body {
-            text-align: center; /* Centraliza todo o texto no corpo do site */
-        }
-         
-        #proverbio {
-            color: blue; /* Faz o provérbio aparecer em azul */
-        }
-        #banner-topo {
-            /* Adicione seu estilo para o banner do topo aqui */
-        }
-        #banner-meio {
-            /* Adicione seu estilo para o banner do meio aqui */
-        }
-        #rodape {
-            /* Adicione seu estilo para o rodapé aqui */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Título Aqui</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    
-<div id="banner-topo">
-    <img src="20240209_054222_0000.png" alt="Banner do Topo">
-</div>
+    <div id="banner-topo">
+        <img src="20240209_054222_0000.png" alt="Banner do Topo">
+    </div>
 
     <div id="banner-meio">
-       <p id="dia">PROVÉRBIO DO DIA</p>
+        <p id="dia">PROVÉRBIO DO DIA</p>
         <p id="proverbio"></p>
-           <p id="fonte">Fonte: Bíblia Sagrada</p>
+        <p id="fonte">Fonte: Bíblia Sagrada</p>
     </div>
 
     <div id="rodape">
-        <p>&copy 2024 proverbiodiario - Todos os direitos reservados</p>
+        <p>&copy; 2024 proverbiodiario - Todos os direitos reservados</p>
     </div>
 
-
-
-   <div id="quiz-container">
-    <h2 id="question">Pergunta</h2>
-    <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Resposta 1</button>
-        <button class="btn">Resposta 2</button>
-        <button class="btn">Resposta 3</button>
-        <button class="btn">Resposta 4</button>
+    <div id="quiz-container">
+        <h2 id="question">Pergunta</h2>
+        <div id="answer-buttons" class="btn-grid">
+            <button class="btn">Resposta 1</button>
+            <button class="btn">Resposta 2</button>
+            <button class="btn">Resposta 3</button>
+            <button class="btn">Resposta 4</button>
+        </div>
     </div>
-</div>
-<div id="result-container" style="display: none;">
-    <h2 id="result"></h2>
-    <button id="restart">Reiniciar Quiz</button>
-</div>
 
-<script>
-    var perguntas = [
-    {
-        pergunta: "Quem foi o primeiro homem na Terra de acordo com a Bíblia?",
-        respostas: ["Adão", "Caim", "Abel", "Noé"],
-        correta: 0
-    },
-    {
-        pergunta: "Qual profeta foi engolido por um grande peixe?",
-        respostas: ["Jonas", "Elias", "Jeremias", "Isaías"],
-        correta: 0
-    },
-    {
-        pergunta: "Quem foi o irmão mais novo de Jacó na Bíblia?",
-        respostas: ["Esaú", "José", "Benjamim", "Moisés"],
-        correta: 2
-    },
-    {
-        pergunta: "Quem construiu a arca conforme o relato bíblico do dilúvio?",
-        respostas: ["Noé", "Abraão", "Matusalém", "Salomão"],
-        correta: 0
-    },
-    {
-        pergunta: "Quem foi escolhido por Deus para libertar os israelitas da escravidão no Egito?",
-        respostas: ["Moisés", "Josué", "Gideão", "Sansão"],
-        correta: 0
-    },
-    {
-        pergunta: "Quem escreveu a maior parte dos livros do Novo Testamento da Bíblia?",
-        respostas: ["Pedro", "Paulo", "João", "Tiago"],
-        correta: 1
-    },
-    {
-        pergunta: "Quem era conhecido como 'homem segundo o coração de Deus' na Bíblia?",
-        respostas: ["Salomão", "Davi", "Saul", "José"],
-        correta: 1
-    },
-    {
-        pergunta: "Qual foi o sinal que Deus deu a Noé de que nunca mais destruiria a Terra com um dilúvio?",
-        respostas: ["Um arco-íris", "Uma nuvem em forma de pomba", "Uma estrela cadente", "Um trovão"],
-        correta: 0
-    },
-    {
-        pergunta: "Quem foi o rei que construiu o Templo de Jerusalém na Bíblia?",
-        respostas: ["Salomão", "Davi", "José", "Ezequias"],
-        correta: 0
-    },
-    {
-        pergunta: "Qual dos discípulos de Jesus o traiu por trinta moedas de prata?",
-        respostas: ["Judas Iscariotes", "Pedro", "João", "Tiago"],
-        correta: 0
-    }
-];
-    var perguntaAtual = 0;
-    var pontuacao = 0;
+    <div id="result-container" style="display: none;">
+        <h2 id="result"></h2>
+        <button id="restart">Reiniciar Quiz</button>
+    </div>
 
-    document.getElementById('quiz-container').style.display = 'block';
-    document.getElementById('result-container').style.display = 'none';
-
-    function mostrarPergunta() {
-        var pergunta = perguntas[perguntaAtual];
-        document.getElementById('question').innerText = pergunta.pergunta;
-        var botoes = document.querySelectorAll('#answer-buttons .btn');
-        for (var i = 0; i < botoes.length; i++) {
-            botoes[i].innerText = pergunta.respostas[i];
-            botoes[i].disabled = false;
-            botoes[i].addEventListener('click', escolherResposta);
-        }
-    }
-
-    function escolherResposta(e) {
-        var botao = e.target;
-        var index = Array.prototype.indexOf.call(botao.parentNode.children, botao);
-        if (index === perguntas[perguntaAtual].correta) {
-            pontuacao++;
-        }
-        perguntaAtual++;
-        if (perguntaAtual < perguntas.length) {
-            mostrarPergunta();
-        } else {
-            mostrarResultado();
-        }
-    }
-
-    function mostrarResultado() {
-        document.getElementById('quiz-container').style.display = 'none';
-        document.getElementById('result-container').style.display = 'block';
-        document.getElementById('result').innerText = 'Você acertou ' + pontuacao + ' de ' + perguntas.length + ' perguntas!';
-        document.getElementById('restart').addEventListener('click', reiniciarQuiz);
-    }
-
-    function reiniciarQuiz() {
-        perguntaAtual = 0;
-        pontuacao = 0;
-        mostrarPergunta();
-    }
-
-</script>
-
-   <script src="proverbio.js"></script>
+    <script src="proverbio.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
