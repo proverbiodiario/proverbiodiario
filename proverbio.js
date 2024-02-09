@@ -1,4 +1,6 @@
-// Array de provérbios
+// proverbio.js
+
+// Lista de provérbios
 export const proverbios = [
 "Provérbios de Salomão, filho de Davi, rei de Israel:",
 "Para se conhecer a sabedoria e a instrução; para se entenderem as palavras de entendimento;",
@@ -117,4 +119,4 @@ export const proverbios = [
 "Certamente ele escarnecerá dos escarnecedores, mas dará graça aos mansos.",
 "Os sábios herdarão honra, mas os loucos tomam sobre si confusão."
 // Adicione mais provérbios conforme necessário
-          ];
+];
